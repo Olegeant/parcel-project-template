@@ -1,0 +1,8 @@
+.hero {
+  &-section {
+    background-color: $main-background-color;
+  }
+  &-container {
+    max-width: 480px;
+  }
+}
