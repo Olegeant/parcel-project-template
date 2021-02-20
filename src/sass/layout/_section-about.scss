@@ -1,6 +1,22 @@
 .about {
-  position: relative;
   background: $color-bg-section;
+  width: 320px;
+  margin: auto;
+  background-position: 0 680px;
+  background-repeat: no-repeat;
+  background-image: url(../images/about/img-mob-milk@1x.png);
+
+  @media screen and (min-width: 768px) {
+    width: 768px;
+    background-image: none;
+  }
+  @media screen and (min-width: 1280px) {
+    display: block;
+    width: 1282px;
+    height: 534px;
+    // background-position: 0 680px;
+    background-image: url(../images/about/img-desktop-milk@1x.png);
+  }
 
   & .container {
     width: 320px;
@@ -20,7 +36,15 @@
 
 .title-container {
   display: block;
-  margin-bottom: 26px;
+  padding-bottom: 26px;
+
+  @media screen and (min-width: 768px) {
+    padding-bottom: 100px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    padding-bottom: 102px;
+  }
 }
 
 .about-label {
@@ -67,14 +91,14 @@
   background: url(../images/about/img-mob-cow@1x.png);
 
   @media screen and (min-width: 768px) {
+    position: absolute;
     margin: 0;
-    background-position: left;
+    background-position: 0 -50px;
     width: 340px;
     height: 339px;
     background: url(../images/about/img-tablet-cow@1x.png);
   }
   @media screen and (min-width: 1280px) {
-    position: absolute;
     width: 516px;
     height: 516px;
     background: url(../images/about/img-desktop-cow@1x.png);
@@ -82,7 +106,8 @@
 }
 
 .text-container {
-  margin: 0 15px;
+  width: 220px;
+  margin: auto;
 
   @media screen and (min-width: 768px) {
     width: 340px;
@@ -104,8 +129,18 @@
   font-weight: 500;
   font-size: 12px;
   line-height: 1.62;
-
   margin-bottom: 30px;
+
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+    line-height: 1.76;
+    letter-spacing: 0.04em;
+  }
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 35px;
+    font-size: 16px;
+    line-height: 1.76;
+  }
 }
 
 .text-secondary {
@@ -114,30 +149,25 @@
   line-height: 1.62;
   color: $secondary-text-color;
 
-  &__first {
-    margin-bottom: 12px;
-  }
-}
-
-.milk {
-  position: absolute;
-  top: 666px;
-  width: 320px;
-  height: 133px;
-  margin: auto;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
-  background: url(../images/about/img-mob-milk@1x.png);
-
   @media screen and (min-width: 768px) {
-    display: none;
+    font-size: 14px;
+    line-height: 1.76;
+    letter-spacing: 0.04em;
   }
   @media screen and (min-width: 1280px) {
-    display: block;
-    width: 1282px;
-    height: 534px;
-    background: url(../images/about/img-desktop-milk@1x.png);
+    font-size: 16px;
+    line-height: 1.76;
+  }
+
+  &__first {
+    margin-bottom: 12px;
+
+    @media screen and (min-width: 768px) {
+      margin-bottom: 30px;
+    }
+    @media screen and (min-width: 1280px) {
+      margin-bottom: 35px;
+    }
   }
 }
 
@@ -148,6 +178,8 @@
   font-weight: bold;
   font-size: 14px;
   line-height: 1.29;
+
+  padding: 0;
 
   align-items: center;
   text-align: center;
