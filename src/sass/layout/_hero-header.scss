@@ -66,6 +66,27 @@
     background-image: url(../images/hero-header/img-desktop-icecream@1x.png);
   }
 }
+.hero-main-big-b {
+  @media screen and (min-width: 768px) {
+    position: absolute;
+    bottom: 0;
+    right: 34px;
+    width: 168px;
+    height: 133px;
+    background-repeat: no-repeat;
+    background-image: url(../images/hero-header/img-tablet-girl@1x.png);
+    z-index: 21;
+  }
+  @media screen and (min-width: 1280px) {
+    position: absolute;
+    bottom: 0;
+    right: 34px;
+    width: 293px;
+    height: 232px;
+    background-repeat: no-repeat;
+    background-image: url(../images/hero-header/img-desktop-girl@1x.png);
+  }
+}
 
 .header-mob {
   position: relative;
@@ -315,7 +336,7 @@
     z-index: 10;
   }
 }
-.hero-crossing {
+.hero-text-crossing {
   display: block;
   width: 18px;
   height: 18px;
@@ -323,4 +344,48 @@
   background-color: $color-bg-inverse;
   margin-top: 7px;
   @include centeredFlex($type: flex);
+}
+.hero-number {
+  &-sale-list {
+    position: absolute;
+    top: 94px;
+    right: 44px;
+  }
+  &-sale {
+    position: relative;
+    text-align: right;
+    z-index: 20;
+    &:not(:last-child) {
+      padding-bottom: 13px;
+    }
+
+    &::after {
+      position: absolute;
+      content: '';
+      top: -2px;
+      right: -10px;
+      width: 16px;
+      height: 16px;
+      border-radius: 50%;
+      background-color: $color-bg-inverse;
+      z-index: -1;
+    }
+  }
+  &-number {
+    color: $accent-color;
+    font-family: $font-decor;
+    font-weight: normal;
+    font-size: 28px;
+    line-height: 1.14;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+  }
+
+  &-text {
+    color: $color-text;
+    font-family: $font-main;
+    font-weight: normal;
+    font-size: 8px;
+    line-height: 1.25;
+  }
 }
