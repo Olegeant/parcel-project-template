@@ -118,17 +118,20 @@
   }
   &.is-open {
     @media screen and (min-width: 768px) {
+      position: fixed;
       top: 23px;
-      right: 0px;
+      right: 34px;
     }
   }
 }
 .menu-button .icon-cross {
   display: none;
 }
-.menu-button .icon-menu {
+.menu-button.is-open + .header-order-btn__tabl {
+  @media screen and (min-width: 768px) and (max-width: 1280px) {
+    display: none;
+  }
 }
-
 .menu-button.is-open .icon-cross {
   display: block;
 }
@@ -137,7 +140,7 @@
   display: none;
 }
 .menu-container {
-  position: absolute;
+  position: fixed;
   top: 0;
   right: 0;
   width: 100%;
