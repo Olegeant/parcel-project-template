@@ -90,9 +90,6 @@
 
 .header-mob {
   position: relative;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
 }
 .header-logo {
   position: absolute;
@@ -114,10 +111,22 @@
   padding: 0;
   border: none;
   background-color: transparent;
-  z-index: 10;
+  z-index: 30;
+  @media screen and (min-width: 768px) {
+    top: 52px;
+    right: 190px;
+  }
+  &.is-open {
+    @media screen and (min-width: 768px) {
+      top: 23px;
+      right: 0px;
+    }
+  }
 }
 .menu-button .icon-cross {
   display: none;
+}
+.menu-button .icon-menu {
 }
 
 .menu-button.is-open .icon-cross {
@@ -135,10 +144,15 @@
   min-height: 100vh;
   height: 100%;
   background-color: $color-menu;
-  z-index: 8;
+  z-index: 29;
   display: none;
+
+  @media screen and (min-width: 768px) {
+    width: 254px;
+  }
   &.is-open {
     display: block;
+    overflow: visible;
   }
 }
 .header-order {
@@ -152,9 +166,34 @@
     border-radius: 22px;
     border: none;
     background-color: $color-bg-inverse;
+    @media screen and (min-width: 768px) {
+      width: 186px;
+    }
+
     &:hover,
     &:focus {
       background-color: $color-bg-btn_hover;
+    }
+  }
+  &-btn__tabl {
+    display: none;
+    @media screen and (min-width: 768px) and (max-width: 1280px) {
+      position: absolute;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      top: 38px;
+      right: 0;
+      width: 160px;
+      height: 44px;
+      border-radius: 22px;
+      border: none;
+      background-color: $color-bg-inverse;
+      z-index: 13;
+      &:hover,
+      &:focus {
+        background-color: $color-bg-btn_hover;
+      }
     }
   }
 
