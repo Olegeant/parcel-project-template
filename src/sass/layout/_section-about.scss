@@ -1,0 +1,110 @@
+.about {
+  background: $color-bg-section;
+
+  & .container {
+    padding-top: 125px;
+
+    @media screen and (min-width: 768px) {
+    }
+    @media screen and (min-width: 1280px) {
+    }
+  }
+}
+
+.title-container {
+  display: block;
+  margin-bottom: 26px;
+}
+
+.about-label {
+  font-family: $font-decor;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 1.67;
+  text-align: center;
+  text-transform: uppercase;
+  color: $title-text-color;
+  text-decoration: none;
+  margin: 0 auto 15px;
+}
+
+.about-title {
+  width: 200px;
+  height: 76px;
+
+  font-family: $font-decor;
+  font-weight: normal;
+  font-size: 34px;
+  line-height: 1.15;
+  text-align: center;
+  margin: auto;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: $accent-color;
+  text-decoration: none;
+}
+
+.cow {
+  width: 280px;
+  height: 300px;
+  margin: auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background: url(../images/about/img-mob-cow@1x.png);
+}
+
+.about-text {
+  display: block;
+  margin-bottom: 15px;
+}
+
+.primary-text {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.62;
+
+  margin-bottom: 30px;
+}
+
+.secondary-text {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.62;
+  color: $secondary-text-color;
+
+  &__first {
+    margin-bottom: 12px;
+  }
+}
+
+.about-button {
+  display: flex;
+  width: 176px;
+  height: 44px;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.29;
+
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+
+  color: $accent-color;
+  background: $color-text;
+  border-radius: 22px;
+  border: none;
+  cursor: pointer;
+
+  transition: background $cubicBezierMain $transitionTime;
+
+  & span {
+    margin-right: 10px;
+  }
+
+  &:focus,
+  &:hover {
+    background: $color-bg-btn_hover;
+  }
+}
