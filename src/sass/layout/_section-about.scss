@@ -1,3 +1,206 @@
-.about-container {
+.about {
   background: $color-bg-section;
+  width: 320px;
+  margin: auto;
+  background-position: 0 680px;
+  background-repeat: no-repeat;
+  background-image: url(../images/about/img-mob-milk@1x.png);
+
+  @media screen and (min-width: 768px) {
+    width: 768px;
+    background-image: none;
+  }
+  @media screen and (min-width: 1280px) {
+    display: block;
+    width: 1282px;
+    height: 534px;
+    // background-position: 0 680px;
+    background-image: url(../images/about/img-desktop-milk@1x.png);
+  }
+
+  & .container {
+    width: 320px;
+    padding-top: 125px;
+
+    @media screen and (min-width: 768px) {
+      width: 768px;
+      padding-top: 130px;
+    }
+
+    @media screen and (min-width: 1280px) {
+      width: 1280px;
+      padding-top: 0;
+    }
+  }
+}
+
+.title-container {
+  display: block;
+  padding-bottom: 26px;
+
+  @media screen and (min-width: 768px) {
+    padding-bottom: 100px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    padding-bottom: 102px;
+  }
+}
+
+.about-label {
+  font-family: $font-decor;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 1.67;
+  text-align: center;
+  text-transform: uppercase;
+  color: $title-text-color;
+  text-decoration: none;
+  margin: 0 auto 15px;
+}
+
+.about-title {
+  width: 200px;
+  height: 76px;
+
+  font-family: $font-decor;
+  font-weight: normal;
+  font-size: 34px;
+  line-height: 1.15;
+  text-align: center;
+  margin: auto;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: $accent-color;
+  text-decoration: none;
+}
+
+.about-container {
+  position: relative;
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
+}
+
+.cow {
+  width: 280px;
+  height: 279px;
+  margin: auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background: url(../images/about/img-mob-cow@1x.png);
+
+  @media screen and (min-width: 768px) {
+    position: absolute;
+    margin: 0;
+    background-position: 0 -50px;
+    width: 340px;
+    height: 339px;
+    background: url(../images/about/img-tablet-cow@1x.png);
+  }
+  @media screen and (min-width: 1280px) {
+    width: 516px;
+    height: 516px;
+    background-position: 0 -57px;
+    background: url(../images/about/img-desktop-cow@1x.png);
+  }
+}
+
+.text-container {
+  width: 220px;
+  margin: auto;
+
+  @media screen and (min-width: 768px) {
+    width: 340px;
+    margin: 0;
+    margin-left: auto;
+  }
+  @media screen and (min-width: 1280px) {
+    width: 463px;
+  }
+}
+
+.about-text {
+  display: block;
+  margin-bottom: 15px;
+}
+
+.text-primary {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.62;
+  margin-bottom: 30px;
+
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+    line-height: 1.76;
+    letter-spacing: 0.04em;
+  }
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 35px;
+    font-size: 16px;
+    line-height: 1.76;
+  }
+}
+
+.text-secondary {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.62;
+  color: $secondary-text-color;
+
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+    line-height: 1.76;
+    letter-spacing: 0.04em;
+  }
+  @media screen and (min-width: 1280px) {
+    font-size: 16px;
+    line-height: 1.76;
+  }
+
+  &__first {
+    margin-bottom: 12px;
+
+    @media screen and (min-width: 768px) {
+      margin-bottom: 30px;
+    }
+    @media screen and (min-width: 1280px) {
+      margin-bottom: 35px;
+    }
+  }
+}
+
+.about-button {
+  display: flex;
+  width: 176px;
+  height: 44px;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.29;
+
+  padding: 0;
+
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+
+  color: $accent-color;
+  background: $color-text;
+  border-radius: 22px;
+  border: none;
+  cursor: pointer;
+
+  transition: background $cubicBezierMain $transitionTime;
+
+  & span {
+    margin-right: 10px;
+  }
+
+  &:focus,
+  &:hover {
+    background: $color-bg-btn_hover;
+  }
 }
