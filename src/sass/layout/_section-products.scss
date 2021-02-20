@@ -2,6 +2,7 @@
   padding-top: 121px;
   padding-bottom: 98px;
 }
+
 .lable-products {
   margin-bottom: 15px;
   font-family: Titan One;
@@ -42,6 +43,7 @@ li {
   &:nth-child(3n) {
     margin-bottom: 0;
   }
+
   // &::before {
   //   position: absolute;
   //   content: '';
@@ -49,6 +51,7 @@ li {
   //   height: 252px;
   //   background-image: url(//src/images/products/img-mob-icecream@1x.png);
   // }
+
 }
 .pink-color {
   background-color: $main-background-color;
@@ -66,6 +69,7 @@ li {
 //   background-image: url(//src/images/products/img-mob-icecream@1x.png);
 //   background-repeat: no-repeat;
 // }
+
 .products-image {
   position: absolute;
   right: 15px;
@@ -107,6 +111,7 @@ li {
   line-height: 152%;
   text-align: center;
   letter-spacing: 0.04em;
+
   color: $color-text;
 }
 .detailed-description {
