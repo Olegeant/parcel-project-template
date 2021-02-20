@@ -80,7 +80,7 @@
   @media screen and (min-width: 1280px) {
     position: absolute;
     bottom: 0;
-    right: 34px;
+    right: 75px;
     width: 293px;
     height: 232px;
     background-repeat: no-repeat;
@@ -102,7 +102,7 @@
     top: 37px;
   }
   @media screen and (min-width: 1280px) {
-    left: -70px;
+    left: -35px;
   }
 }
 .menu-button {
@@ -206,6 +206,7 @@
   }
   @media screen and (min-width: 1280px) {
     top: 171px;
+    left: 115px;
   }
   &-text {
     margin: 0;
@@ -319,10 +320,20 @@
   top: 292px;
   left: 158px;
   width: 114px;
+  @media screen and (min-width: 1280px) {
+    top: 485px;
+    left: 295px;
+    width: 200px;
+  }
+
   &-item {
     color: $color-text;
     font-size: 8px;
     line-height: 1.5;
+    @media screen and (min-width: 1280px) {
+      font-size: 14px;
+      line-height: 1.4;
+    }
   }
   &::before {
     position: absolute;
@@ -334,6 +345,13 @@
     background-repeat: no-repeat;
     background-image: url(../images/hero-header/img-tablet-milk@1x.png);
     z-index: 10;
+    @media screen and (min-width: 1280px) {
+      top: -56px;
+      left: -218px;
+      width: 188px;
+      height: 191px;
+      background-image: url(../images/hero-header/img-desktop-milk@1x.png);
+    }
   }
 }
 .hero-text-crossing {
@@ -344,12 +362,21 @@
   background-color: $color-bg-inverse;
   margin-top: 7px;
   @include centeredFlex($type: flex);
+  @media screen and (min-width: 1280px) {
+    width: 26px;
+    height: 26px;
+    margin-top: 20px;
+  }
 }
 .hero-number {
   &-sale-list {
     position: absolute;
     top: 94px;
     right: 44px;
+    @media screen and (min-width: 1280px) {
+      top: 156px;
+      right: 93px;
+    }
   }
   &-sale {
     position: relative;
@@ -357,6 +384,9 @@
     z-index: 20;
     &:not(:last-child) {
       padding-bottom: 13px;
+      @media screen and (min-width: 1280px) {
+        padding-bottom: 15px;
+      }
     }
 
     &::after {
@@ -369,6 +399,12 @@
       border-radius: 50%;
       background-color: $color-bg-inverse;
       z-index: -1;
+      @media screen and (min-width: 1280px) {
+        top: -4px;
+        right: -18px;
+        width: 30px;
+        height: 30px;
+      }
     }
   }
   &-number {
@@ -379,6 +415,10 @@
     line-height: 1.14;
     letter-spacing: 0.04em;
     text-transform: uppercase;
+    @media screen and (min-width: 1280px) {
+      font-size: 46px;
+      line-height: 1.15;
+    }
   }
 
   &-text {
@@ -387,5 +427,9 @@
     font-weight: normal;
     font-size: 8px;
     line-height: 1.25;
+    @media screen and (min-width: 1280px) {
+      font-size: 14px;
+      line-height: 1.29;
+    }
   }
 }
