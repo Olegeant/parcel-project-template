@@ -3,19 +3,25 @@ p {
 }
 
 .contact {
-  background-image: linear-gradient(
-    to bottom,
-    #ffffff 5%,
-    #fff5f6 5%,
-    #fff5f6 95%
-  );
+  // Krokodil
+  background-color: #fff5f6;
+  @media screen and (max-width: 1279px) {
+    background-image: linear-gradient(
+      to bottom,
+      #ffffff 0%,
+      #ffffff 84px,
+      #fff5f6 84px,
+      #fff5f6 100%
+    );
+  }
+  // Krokodil
 }
 
 .contact {
   font-family: $font-main;
   font-weight: 500;
   font-size: 12px;
-  min-height: 1500px;
+  // min-height: 1500px; // Krokodil
 
   /*background-color: $color-bg-section;*/
 
