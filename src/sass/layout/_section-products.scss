@@ -33,6 +33,7 @@ li {
 .products-list {
   padding: 0;
 }
+
 .products-item {
   position: relative;
   width: 100%;
@@ -43,18 +44,31 @@ li {
   &:nth-child(3n) {
     margin-bottom: 0;
   }
-
-  // &::before {
+  // &::after {
   //   position: absolute;
   //   content: '';
-  //   width: 249px;
-  //   height: 252px;
-  //   background-image: url(//src/images/products/img-mob-icecream@1x.png);
-  // }
+  //   left: 50%;
+  //   width: 26px;
+  //   height: 6px;
 
+    
+
+  //   transform: translate(-50%, 15px);
+  // }
 }
 .pink-color {
   background-color: $main-background-color;
+
+  &::before {
+    position: absolute;
+    content: '';
+    width: 249px;
+    height: 252px;
+    background-image: url(../images/products/img-mob-icecream@1x.png);
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 346px;
+  }
 }
 .coffee-color {
   background-color: $color-bg-card2;
@@ -66,18 +80,18 @@ li {
 //   position: absolute;
 //   width: 249px;
 //   height: 252px;
-//   background-image: url(//src/images/products/img-mob-icecream@1x.png);
+//   background-image: url(../images/products/img-mob-icecream@1x.png);
 //   background-repeat: no-repeat;
 // }
 
-.products-image {
-  position: absolute;
-  right: 15px;
-  left: 50%;
-  bottom: 346px;
+// .products-image {
+//   position: absolute;
+//   right: 15px;
+//   left: 50%;
+//   bottom: 346px;
 
-  transform: translateX(-50%);
-}
+//   transform: translateX(-50%);
+// }
 .products-name {
   margin: auto;
   padding-top: 161px;
