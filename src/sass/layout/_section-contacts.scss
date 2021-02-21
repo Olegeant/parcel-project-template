@@ -3,8 +3,8 @@ p {
 }
 
 .contact {
-  // Krokodil
   background-color: #fff5f6;
+
   @media screen and (max-width: 1279px) {
     background-image: linear-gradient(
       to bottom,
@@ -14,16 +14,34 @@ p {
       $color-bg-section 100%
     );
   }
-  // Krokodil
+
+  @media screen and (min-width: 1280px) {
+    background-color: $color-bg-section;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 0 25%;
+    background-image: url('../images/contacts/backgroundcont.png');
+  }
+
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (-webkit-min-device-pixel-ratio: 2),
+    screen and (-o-min-device-pixel-ratio: 2/1),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    @media screen and (min-width: 1280px) {
+      background-color: $color-bg-section;
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: 0 25%;
+      background-image: url('../images/contacts/backgroundcont@2x.png');
+    }
+  }
 }
 
 .contact {
   font-family: $font-main;
   font-weight: 500;
   font-size: 12px;
-  // min-height: 1500px; // Krokodil
-
-  /*background-color: $color-bg-section;*/
 
   &__set-list {
     display: flex;
@@ -353,6 +371,11 @@ p {
     @media screen and (min-width: 1280px) {
       width: 180px;
     }
+  }
+
+  &__btn-white:hover,
+  &__btn-white:focus {
+    background: $color-bg-btn_hover;
   }
 
   &__btn-icon {
