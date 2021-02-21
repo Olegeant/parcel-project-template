@@ -5,7 +5,6 @@
 
 .lable-products {
   margin-bottom: 15px;
-
   font-family: Titan One;
   font-style: normal;
   font-weight: normal;
@@ -13,14 +12,11 @@
   line-height: 1.17;
   text-align: center;
   text-transform: uppercase;
-
   color: $title-text-color;
 }
-
 .products-title {
   margin-top: 0;
   margin-bottom: 144px;
-
   font-family: Titan One;
   font-style: normal;
   font-weight: normal;
@@ -29,28 +25,21 @@
   text-align: center;
   letter-spacing: 0.04em;
   text-transform: uppercase;
-
   color: $accent-color;
 }
-
 li {
   list-style: none;
 }
-
 .products-list {
   padding: 0;
 }
-
 .products-item {
   position: relative;
-
   width: 100%;
   height: 485px;
   margin-bottom: 129px;
   text-align: center;
-
   border-radius: 24px;
-
   &:nth-child(3n) {
     margin-bottom: 0;
   }
@@ -62,16 +51,14 @@ li {
   //   height: 252px;
   //   background-image: url(//src/images/products/img-mob-icecream@1x.png);
   // }
-}
 
+}
 .pink-color {
   background-color: $main-background-color;
 }
-
 .coffee-color {
   background-color: $color-bg-card2;
 }
-
 .green-color {
   background-color: $color-bg-card3;
 }
@@ -86,31 +73,27 @@ li {
 .products-image {
   position: absolute;
   right: 15px;
-  left: 16px;
+  left: 50%;
   bottom: 346px;
-}
 
+  transform: translateX(-50%);
+}
 .products-name {
   margin: auto;
   padding-top: 161px;
-
   font-family: Titan One;
   font-style: normal;
   font-weight: normal;
   font-size: 20px;
   line-height: 1.15;
-
   text-align: center;
   letter-spacing: 0.04em;
   text-transform: uppercase;
-
   color: $color-text;
 }
-
 .ellipsis-icon {
   margin: 30px 127px;
 }
-
 .description-item {
   display: block;
   margin-right: 41px;
@@ -119,10 +102,8 @@ li {
   min-width: 200px;
   height: 124px;
 }
-
 .description {
   margin: 0;
-
   font-family: DM Sans;
   font-style: normal;
   font-weight: bold;
@@ -133,7 +114,6 @@ li {
 
   color: $color-text;
 }
-
 .detailed-description {
   display: inline-flex;
   justify-content: center;
@@ -142,6 +122,5 @@ li {
   height: 40px;
   border-radius: 50%;
   border: none;
-
   fill: $accent-color;
 }

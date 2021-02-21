@@ -1,14 +1,18 @@
 <section class="hero-section">
   <div class="hero-container container" id="header">
-    <div class="hero-main-bg"></div>
+    <div class="hero-main-big-b"></div>
     <div class="hero-main-im"></div>
 
     <nav class="navigation-header">
       <div class="header-mob">
         <a href="#header" class="header-logo link">
           <img
+            srcset="
+              ./images/hero-header/img-desktop-logo@1x.png 1x,
+              ./images/hero-header/img-desktop-logo@2x.png 2x
+            "
             src="./images/hero-header/img-desktop-logo@1x.png"
-            alt=""
+            alt="company `s logo"
             class="header-logo-img"
             width="200"
           />
@@ -36,9 +40,26 @@
             alt=""
           />
         </button>
+        <button
+          type="button"
+          class="header-order-btn__tabl button-glitter button-glitter--white button-not-static"
+          data-modal-open
+        >
+          <span class="header-order-text">Buy now</span>
+          <img
+            class="header-order-img"
+            width="8"
+            height="10"
+            src="./images/icons/header-vector1.svg"
+            alt=""
+          />
+        </button>
       </div>
       <div class="menu-container" data-menu>
-        <button type="button" class="header-order-btn">
+        <button
+          type="button"
+          class="header-order-btn button-glitter button-glitter--white"
+        >
           <span class="header-order-text">Buy now</span>
           <img
             class="header-order-img"
@@ -50,19 +71,19 @@
         </button>
         <ul class="navigatoin-list list">
           <li class="navigatoin-item">
-            <a href="" class="navigatoin-link link">Home</a>
+            <a href="#header" class="navigatoin-link link">Home</a>
           </li>
           <li class="navigatoin-item">
-            <a href="" class="navigatoin-link link">About us</a>
+            <a href="#about" class="navigatoin-link link">About us</a>
           </li>
           <li class="navigatoin-item">
             <a href="" class="navigatoin-link link">How it’s made?</a>
           </li>
           <li class="navigatoin-item">
-            <a href="" class="navigatoin-link link">Our products</a>
+            <a href="#products" class="navigatoin-link link">Our products</a>
           </li>
           <li class="navigatoin-item">
-            <a href="" class="navigatoin-link link">Contact</a>
+            <a href="#contacts" class="navigatoin-link link">Contact</a>
           </li>
         </ul>
       </div>
@@ -74,8 +95,14 @@
           <span class="hero-title-part">made with</span>
           <span class="hero-title-accent">passion</span>
         </h1>
-        <a href="" class="hero-button-product link">Products</a>
-        <a href="" class="hero-button-made link">How it’s made?</a>
+        <a href="#products" class="hero-button-product link button-glitter"
+          >Products</a
+        >
+        <a
+          href=""
+          class="hero-button-made link button-glitter button-glitter--white"
+          >How it’s made?</a
+        >
       </div>
       <div class="hero-secondary">
         <div class="hero-text">
@@ -83,17 +110,25 @@
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et
           </p>
-          <a href="" class="hero-crossing"></a>
+          <a href="" class="hero-text-crossing link">
+            <img
+              class="hero-crossing-img"
+              width="10"
+              height="10"
+              src="./images/icons/arrow-right-hero.svg"
+              alt="link to jump to full description"
+            />
+          </a>
         </div>
 
-        <ul class="list">
-          <li class="number-sale">
-            <p class="number">16</p>
-            <p class="number-text">cafes</p>
+        <ul class="hero-number-sale-list list">
+          <li class="hero-number-sale">
+            <p class="hero-number-number">16</p>
+            <p class="hero-number-text">cafes</p>
           </li>
-          <li class="number-sale">
-            <p class="number">23</p>
-            <p class="number-text">food trucks</p>
+          <li class="hero-number-sale">
+            <p class="hero-number-number">23</p>
+            <p class="hero-number-text">food trucks</p>
           </li>
         </ul>
       </div>
