@@ -99,7 +99,7 @@
   @media screen and (min-width: 1280px) {
     position: absolute;
     bottom: 0;
-    right: 75px;
+    right: 110px;
     width: 293px;
     height: 232px;
     background-repeat: no-repeat;
@@ -140,7 +140,7 @@
     top: 37px;
   }
   @media screen and (min-width: 1280px) {
-    left: -35px;
+    left: -70px;
   }
 }
 .menu-button {
@@ -156,6 +156,9 @@
   @media screen and (min-width: 768px) {
     top: 52px;
     right: 190px;
+  }
+  @media screen and (min-width: 1280px) {
+    display: none;
   }
   &.is-open {
     @media screen and (min-width: 768px) {
@@ -191,16 +194,24 @@
   z-index: 29;
   display: none;
 
-  animation-name: openMobileMenu;
-  animation-duration: 500ms;
-  animation-iteration-count: 1;
-  animation-direction: normal;
-  animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  animation-fill-mode: forwards;
-  animation-delay: 0s;
-
   @media screen and (min-width: 768px) {
     width: 254px;
+  }
+  @media screen and (max-width: 1280px) {
+    animation-name: openMobileMenu;
+    animation-duration: 500ms;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    animation-fill-mode: forwards;
+    animation-delay: 0s;
+  }
+  @media screen and (min-width: 1280px) {
+    position: relative;
+    display: block;
+    width: 100%;
+    min-height: 50px;
+    background-color: transparent;
   }
   &.is-open {
     display: block;
@@ -221,6 +232,9 @@
     @media screen and (min-width: 768px) {
       width: 186px;
     }
+    @media screen and (min-width: 1280px) {
+      display: none;
+    }
 
     &:hover,
     &:focus {
@@ -229,7 +243,7 @@
   }
   &-btn__tabl {
     display: none;
-    @media screen and (min-width: 768px) /*and (max-width: 1280px) */ {
+    @media screen and (min-width: 768px) {
       position: absolute;
       display: flex;
       justify-content: center;
@@ -265,6 +279,29 @@
 }
 
 .navigatoin {
+  &-list {
+    margin-top: 20px;
+    @media screen and (min-width: 1280px) {
+      display: flex;
+      justify-content: center;
+      margin-top: 0;
+      padding-top: 38px;
+    }
+  }
+  &-item {
+    padding-left: 21px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    border-top: 1px solid #e18298;
+    border-bottom: 1px solid #e18298;
+    @media screen and (min-width: 1280px) {
+      padding-left: 0;
+      border: none;
+      &:not(:last-child) {
+        margin-right: 35px;
+      }
+    }
+  }
   &-link {
     color: $color-text;
     font-family: $font-main;
@@ -276,16 +313,10 @@
     &:focus {
       color: $accent-color;
     }
-  }
-  &-item {
-    padding-left: 21px;
-    padding-top: 12px;
-    padding-bottom: 12px;
-    border-top: 1px solid #e18298;
-    border-bottom: 1px solid #e18298;
-  }
-  &-list {
-    margin-top: 20px;
+    @media screen and (min-width: 1280px) {
+      font-size: 16px;
+      line-height: 1.31;
+    }
   }
 }
 .hero-title {
@@ -466,7 +497,7 @@
     right: 44px;
     @media screen and (min-width: 1280px) {
       top: 156px;
-      right: 93px;
+      right: 115px;
     }
   }
   &-sale {
