@@ -176,15 +176,20 @@
   position: fixed;
   top: 20px;
   right: 28px;
-  display: inline-flex;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 5px;
   margin: 0;
   padding: 0;
   border: none;
-  background-color: transparent;
+  background-color: rgba(255, 0, 0, 0.1);
   z-index: 30;
   @media screen and (min-width: 768px) {
     position: absolute;
-    top: 52px;
+    top: 47px;
     right: 190px;
   }
   @media screen and (min-width: 1280px) {
@@ -193,8 +198,8 @@
   &.is-open {
     @media screen and (min-width: 768px) {
       position: fixed;
-      top: 23px;
-      right: 34px;
+      top: 20px;
+      right: 20px;
     }
   }
 }
@@ -241,7 +246,7 @@
     display: block;
     width: 600px;
     margin: 0 auto;
-    min-height: 50px;
+    min-height: 70px;
     background-color: transparent;
   }
   &.is-open {
@@ -316,7 +321,7 @@
     margin-top: 20px;
     @media screen and (min-width: 1280px) {
       display: flex;
-      justify-content: center;
+      justify-content: end;
       margin-top: 0;
       padding-top: 38px;
     }
@@ -531,6 +536,7 @@
   border-radius: 50%;
   background-color: $color-bg-inverse;
   margin-top: 7px;
+  fill: $accent-color;
   @include centeredFlex($type: flex);
   @media screen and (min-width: 1280px) {
     width: 26px;
@@ -538,6 +544,7 @@
     margin-top: 20px;
   }
 }
+
 .hero-number {
   &-sale-list {
     position: absolute;
