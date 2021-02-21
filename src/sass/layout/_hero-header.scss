@@ -16,7 +16,6 @@
 
     &::after {
       // Krokodil
-      //
       position: absolute;
       content: ''; // Krokodil
       top: 83px; // Krokodil
@@ -261,6 +260,7 @@
     border-radius: 22px;
     border: none;
     background-color: $color-bg-inverse;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     @media screen and (min-width: 768px) {
       width: 186px;
     }
@@ -288,6 +288,7 @@
       border: none;
       background-color: $color-bg-inverse;
       z-index: 13;
+      transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
       &:hover,
       &:focus {
         background-color: $color-bg-btn_hover;
@@ -341,6 +342,7 @@
     font-weight: bold;
     font-size: 14px;
     line-height: 1.29;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     &:hover,
     &:focus {
       color: $accent-color;
@@ -416,6 +418,7 @@
     font-size: 8px;
     line-height: 1.25;
     background-color: $accent-color;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     &:hover,
     &:focus {
       background-color: $color-btn3_hover;
@@ -447,6 +450,7 @@
     font-size: 8px;
     line-height: 1.25;
     background-color: $color-bg-inverse;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     &:hover,
     &:focus {
       background-color: $color-bg-btn_hover;
