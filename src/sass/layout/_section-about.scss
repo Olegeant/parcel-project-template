@@ -1,7 +1,7 @@
 .about {
-  background: $color-bg-section;
+  background-color: $color-bg-section;
   margin: auto;
-  background-position: center 670px;
+  background-position: center bottom 40px;
   background-repeat: no-repeat;
   background-size: 100%;
   background-image: url(../images/about/img-mob-milk@1x.png);
@@ -13,6 +13,7 @@
   @media screen and (min-width: 1280px) {
     display: block;
     width: 1282px;
+    background-position: center bottom -50px;
     background-image: url(../images/about/img-desktop-milk@1x.png);
   }
 
@@ -36,12 +37,10 @@
   margin: 0 auto 26px;
 
   @media screen and (min-width: 768px) {
-    width: 430px;
     margin: 0 auto 50px;
   }
 
   @media screen and (min-width: 1280px) {
-    width: 535px;
     margin: 0 auto 55px;
   }
 }
@@ -67,8 +66,6 @@
 }
 
 .about-title {
-  width: 200px;
-
   font-family: $font-decor;
   font-weight: normal;
   font-size: 34px;
@@ -99,6 +96,9 @@
   @media screen and (min-width: 768px) {
     display: flex;
   }
+  @media screen and (min-width: 1280px) {
+    padding: 0 40px;
+  }
 }
 
 // .cow {
@@ -127,21 +127,38 @@
 // }
 
 .cow {
-  margin-right: auto;
+  & img {
+    width: 280px;
+    margin: auto;
+  }
+
+  @media screen and (min-width: 768px) {
+    & img {
+      margin-right: 17px;
+      width: 340px;
+    }
+  }
+  @media screen and (min-width: 1280px) {
+    & img {
+      margin-right: 74px;
+      width: 516px;
+    }
+  }
 }
 
 .text-container {
   max-width: 420px;
-  padding: 0 15px;
+  padding: 0 30px;
   margin: auto;
 
   @media screen and (min-width: 768px) {
-    padding: 0;
+    padding: 50px 0 0;
     width: 340px;
     margin: 0;
   }
   @media screen and (min-width: 1280px) {
     width: 463px;
+    padding: 51px 0 0;
   }
 }
 
