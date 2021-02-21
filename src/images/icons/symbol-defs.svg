@@ -36,6 +36,9 @@
 <symbol id="right-arrow-pink" viewBox="0 0 22 32">
 <path fill="none" stroke="#d41443" stroke-width="6.4" stroke-miterlimit="4" stroke-linecap="round" stroke-linejoin="round" style="stroke: var(--color1, #d41443)" d="M4.544 3.2l13.702 12.8-13.702 12.8"></path>
 </symbol>
+<symbol id="header-vector1" viewBox="0 0 8 10">
+<path fill="none" d="M1.10693 1L6.3648 5L1.10693 9" stroke="#D41443" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+</symbol>
 
     </defs>
 </svg>
