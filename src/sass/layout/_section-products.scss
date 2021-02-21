@@ -14,6 +14,7 @@
   text-transform: uppercase;
   color: $title-text-color;
 }
+
 .products-title {
   margin-top: 0;
   margin-bottom: 144px;
@@ -27,9 +28,11 @@
   text-transform: uppercase;
   color: $accent-color;
 }
+
 li {
   list-style: none;
 }
+
 .products-list {
   padding: 0;
 }
@@ -44,18 +47,20 @@ li {
   &:nth-child(3n) {
     margin-bottom: 0;
   }
-  // &::after {
-  //   position: absolute;
-  //   content: '';
-  //   left: 50%;
-  //   width: 26px;
-  //   height: 6px;
+  &::after {
+    position: absolute;
+    content: '';
+    left: 50%;
+    bottom: 265px;
+    width: 26px;
+    height: 6px;
 
-    
+    background-image: url(../images/icons/ellipsis.svg);
 
-  //   transform: translate(-50%, 15px);
-  // }
+    transform: translate(-50%,);
+  }
 }
+
 .pink-color {
   background-color: $main-background-color;
 
@@ -70,28 +75,37 @@ li {
     bottom: 346px;
   }
 }
+
 .coffee-color {
   background-color: $color-bg-card2;
+
+  &::before {
+    position: absolute;
+    content: '';
+    width: 249px;
+    height: 252px;
+    background-image: url(../images/products/img-mob-icecoffee@1x.png);
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 346px;
+  }
 }
+
 .green-color {
   background-color: $color-bg-card3;
+
+  &::before {
+    position: absolute;
+    content: '';
+    width: 249px;
+    height: 252px;
+    background-image: url(../images/products/img-mob-milkshake@1x.png);
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 346px;
+  }
 }
-// .photo-products {
-//   position: absolute;
-//   width: 249px;
-//   height: 252px;
-//   background-image: url(../images/products/img-mob-icecream@1x.png);
-//   background-repeat: no-repeat;
-// }
 
-// .products-image {
-//   position: absolute;
-//   right: 15px;
-//   left: 50%;
-//   bottom: 346px;
-
-//   transform: translateX(-50%);
-// }
 .products-name {
   margin: auto;
   padding-top: 161px;
@@ -117,7 +131,7 @@ li {
   height: 124px;
 }
 .description {
-  margin: 0;
+  margin-top: 66px;
   font-family: DM Sans;
   font-style: normal;
   font-weight: bold;
