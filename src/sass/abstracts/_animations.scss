@@ -1,12 +1,12 @@
 @keyframes openMobileMenu {
   0% {
     opacity: 0;
-    transform: translateY(-100%);
+    transform: translateX(100%);
   }
 
   100% {
     opacity: 1;
-    transform: translateY(0);
+    transform: translateX(0);
   }
 }
 
@@ -19,5 +19,120 @@
   100% {
     opacity: 1;
     transform: scale(1) rotate(180deg);
+  }
+}
+
+@keyframes icecreamAppear {
+  0% {
+    opacity: 0;
+    transform: scale(0);
+  }
+
+  60% {
+    opacity: 1;
+    transform: scale(1.2) rotate(360deg);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1) rotate(360deg);
+  }
+}
+
+@keyframes animateGirl {
+  0% {
+    opacity: 0;
+    transform: scale(1);
+  }
+
+  25% {
+    opacity: 1;
+    transform: scale(1.5);
+  }
+
+  50% {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  75% {
+    opacity: 1;
+    transform: scale(1.2);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes animateOrderBtn {
+  0% {
+    opacity: 1;
+    transform: rotate(-20deg);
+  }
+
+  10% {
+    opacity: 1;
+    transform: rotate(20deg);
+  }
+
+  20% {
+    opacity: 1;
+    transform: rotate(-15deg);
+  }
+
+  30% {
+    opacity: 1;
+    transform: rotate(15deg);
+  }
+
+  40% {
+    opacity: 1;
+    transform: rotate(-10deg);
+  }
+
+  50% {
+    opacity: 1;
+    transform: rotate(10deg);
+  }
+
+  60% {
+    opacity: 1;
+    transform: rotate(-10deg);
+  }
+
+  70% {
+    opacity: 1;
+    transform: rotate(10deg);
+  }
+
+  80% {
+    opacity: 1;
+    transform: rotate(-5deg);
+  }
+
+  90% {
+    opacity: 1;
+    transform: rotate(5deg);
+  }
+
+  100% {
+    opacity: 1;
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes animateBtnGlitter {
+  0% {
+    transform: translateX(-100%);
+  }
+
+  99% {
+    transform: translateX(100%);
+  }
+
+  100% {
+    transform: translateX(-100%);
   }
 }

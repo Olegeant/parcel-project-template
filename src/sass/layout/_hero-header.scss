@@ -51,6 +51,16 @@
   background-image: url(../images/hero-header/img-mob-icecream@1x.png);
   background-repeat: no-repeat;
   z-index: 2;
+
+  opacity: 0;
+  animation-name: icecreamAppear;
+  animation-duration: 1000ms;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  animation-fill-mode: forwards;
+  animation-delay: 250ms;
+
   @media screen and (min-width: 768px) {
     top: 63px;
     left: calc(50% - 6px);
@@ -67,6 +77,15 @@
   }
 }
 .hero-main-big-b {
+  opacity: 0;
+  animation-name: animateGirl;
+  animation-duration: 1000ms;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  animation-fill-mode: forwards;
+  animation-delay: 1250ms;
+
   @media screen and (min-width: 768px) {
     position: absolute;
     bottom: 0;
@@ -85,6 +104,28 @@
     height: 232px;
     background-repeat: no-repeat;
     background-image: url(../images/hero-header/img-desktop-girl@1x.png);
+  }
+}
+
+.header-order-btn__tabl {
+  cursor: pointer;
+  opacity: 0;
+  animation-name: animateOrderBtn;
+  animation-duration: 1000ms;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  animation-fill-mode: forwards;
+  animation-delay: 2250ms;
+
+  &::before {
+    animation-name: animateBtnGlitter;
+    animation-duration: 1000ms;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    animation-fill-mode: forwards;
+    animation-delay: 3500ms;
   }
 }
 
@@ -150,6 +191,14 @@
   z-index: 29;
   display: none;
 
+  animation-name: openMobileMenu;
+  animation-duration: 500ms;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  animation-fill-mode: forwards;
+  animation-delay: 0s;
+
   @media screen and (min-width: 768px) {
     width: 254px;
   }
@@ -180,7 +229,7 @@
   }
   &-btn__tabl {
     display: none;
-    @media screen and (min-width: 768px) and (max-width: 1280px) {
+    @media screen and (min-width: 768px) /*and (max-width: 1280px) */ {
       position: absolute;
       display: flex;
       justify-content: center;
