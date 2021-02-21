@@ -35,7 +35,7 @@
       }
       @media screen and (min-width: 1280px) {
         top: 52px;
-        left: calc(50% - 125px);
+        left: calc(50% - 160px);
         width: 538px;
         height: 538px;
       }
@@ -70,7 +70,7 @@
   }
   @media screen and (min-width: 1280px) {
     top: 108px;
-    left: calc(50% - 6px);
+    left: calc(50% - 40px);
     width: 236px;
     height: 557px;
     background-image: url(../images/hero-header/img-desktop-icecream@1x.png);
@@ -144,9 +144,9 @@
   }
 }
 .menu-button {
-  position: absolute;
+  position: fixed;
   top: 20px;
-  right: 0;
+  right: 28px;
   display: inline-flex;
   margin: 0;
   padding: 0;
@@ -154,6 +154,7 @@
   background-color: transparent;
   z-index: 30;
   @media screen and (min-width: 768px) {
+    position: absolute;
     top: 52px;
     right: 190px;
   }
