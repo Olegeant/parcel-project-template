@@ -2,13 +2,19 @@
   margin: 0 0 12px;
 
   // color: $titleTextColor;
-  color: black; // !!!!!!!!!!!!!!!
+  color: $accent-color; // !!!!!!!!!!!!!!!
 
+  font-family: $font-decor;
   font-weight: 700;
-  font-size: 20px;
+  font-size: 30px;
   line-height: 1.15;
   text-align: center;
   letter-spacing: 0.03em;
+}
+
+.modal-form__moto {
+  text-align: center;
+  padding-bottom: 10px;
 }
 
 .modal-form {
@@ -35,11 +41,11 @@
   display: inline-block;
   margin-bottom: 4px;
 
+  color: #70001c;
   // color: $primaryTextColor;
-  color: black; // !!!!!!!!!!!!!!!
 
-  font-weight: 400;
-  font-size: 12px;
+  font-weight: 700;
+  font-size: 14px;
   line-height: 1.17;
   letter-spacing: 0.01em;
 }
@@ -51,10 +57,9 @@
 .modal-form__icon {
   position: absolute;
   left: 12px;
-  bottom: 11px;
+  bottom: 6px;
 
-  // fill: $titleTextColor;
-  fill: black; // !!!!!!!!!!!!!!!
+  fill: rgba(0, 0, 0, 0.6);
 
   transform: translateY(-50%);
   @include transitionMain(fill);
@@ -70,15 +75,17 @@
   height: 40px;
   padding: 11px 24px 11px 42px;
 
+  background-color: rgba(253, 252, 252, 0.7);
+
   // border: 1px solid $borderInputColor;
-  border: 1px solid black; // !!!!!!!!!!!!!!!
+  border: 2px solid rgba(0, 0, 0, 0.5); // !!!!!!!!!!!!!!!
   border-radius: 4px;
   // color: $titleTextColor;
   color: black; // !!!!!!!!!!!!!!!
   outline: transparent;
 
-  font-weight: 400;
-  font-size: 14px;
+  font-weight: 700;
+  font-size: 16px;
   line-height: 1.14;
   letter-spacing: 0.01em;
 
@@ -92,9 +99,9 @@
 
   &--comment::placeholder {
     // color: $modalPlaceholderTextColor;
-    color: grey; // !!!!!!!!!!!!!!!
+    color: rgba(0, 0, 0, 0.7); // !!!!!!!!!!!!!!!
 
-    font-size: 12px;
+    font-size: 14px;
     line-height: 1.17;
   }
 
@@ -111,7 +118,7 @@
   // color: $primaryTextColor;
   color: black; // !!!!!!!!!!!!!!!
 
-  font-size: 12px;
+  font-size: 14px;
   line-height: 1.17;
   letter-spacing: 0.03em;
 
@@ -143,7 +150,7 @@
     background-position: center;
     background-size: contain;
     background-origin: border-box;
-    // background-image: url(../images/icon-check.svg); // !!!!!!!!!!!!!!!
+    background-image: url(../images/icon-check.svg);
   }
 
   .modal-form__checkbox:focus + &::before {
@@ -162,4 +169,21 @@
 
 .modal__submit-btn {
   align-self: center;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 160px;
+  height: 44px;
+  border-radius: 22px;
+  border: none;
+  cursor: pointer;
+
+  background: $accent-color;
+  color: #ffffff;
+
+  font-family: $font-main;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.31;
 }

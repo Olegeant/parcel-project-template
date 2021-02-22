@@ -138,7 +138,7 @@
 
 .header-order-btn__tabl {
   cursor: pointer;
-  opacity: 0;
+  opacity: 1;
   animation-name: animateOrderBtn;
   animation-duration: 1000ms;
   animation-iteration-count: 1;
@@ -185,7 +185,7 @@
   margin: 0;
   padding: 0;
   border: none;
-  background-color: rgba(80, 80, 80, 0.1);
+  background-color: rgba(0, 0, 0, 0.03);
   z-index: 30;
   @media screen and (min-width: 768px) {
     position: absolute;
