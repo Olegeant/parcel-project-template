@@ -6,7 +6,6 @@
   background-repeat: no-repeat;
   background-size: 100%;
   background-image: url(../images/about/img-mob-milk@1x.png);
-
   @media screen and (min-width: 768px) {
     background-image: none;
   }
@@ -14,6 +13,16 @@
     display: block;
     background-position: center bottom -50px;
     background-image: url(../images/about/img-desktop-milk@1x.png);
+  }
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (-webkit-min-device-pixel-ratio: 2),
+    screen and (-o-min-device-pixel-ratio: 2/1),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    background-image: url(../images/about/img-mob-milk@2x.png);
+    @media screen and (min-width: 1280px) {
+      background-image: url(../images/about/img-desktop-milk@2x.png);
+    }
   }
 }
 
@@ -96,21 +105,26 @@
     margin-right: 74px;
   }
 
-  & img {
-    width: 280px;
+  // & img {
+  //   width: 280px;
 
-    @media screen and (min-width: 768px) {
-      & {
-        width: 340px;
-      }
-    }
+  //   @media screen and (min-width: 768px) {
+  //     & {
+  //       width: 340px;
+  //     }
+  //   }
 
-    @media screen and (min-width: 1280px) {
-      & {
-        width: 516px;
-      }
-    }
-  }
+  //   @media screen and (min-width: 1280px) {
+  //     & {
+  //       width: 516px;
+  //     }
+  //   }
+  // }
+}
+
+img {
+  display: block;
+  margin: auto;
 }
 
 .text-container {
