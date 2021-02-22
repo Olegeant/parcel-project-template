@@ -120,12 +120,20 @@ parcelRequire = (function (modules, cache, entry, globalName) {
 })({"js/menu.js":[function(require,module,exports) {
 (function () {
   var menuBtnRef = document.querySelector("[data-menu-button]");
+  var menuLinkRefs = document.querySelectorAll("[data-menu-link]");
   var mobileMenuRef = document.querySelector("[data-menu]");
   menuBtnRef.addEventListener("click", function () {
     var expanded = menuBtnRef.getAttribute("aria-expanded") === "true" || false;
     menuBtnRef.classList.toggle("is-open");
     menuBtnRef.setAttribute("aria-expanded", !expanded);
     mobileMenuRef.classList.toggle("is-open");
+  });
+  menuLinkRefs.forEach(function (menuLinkRef) {
+    menuLinkRef.addEventListener("click", function () {
+      menuBtnRef.classList.remove("is-open");
+      menuBtnRef.setAttribute("aria-expanded", false);
+      mobileMenuRef.classList.remove("is-open");
+    });
   });
 })();
 },{}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
@@ -156,7 +164,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "64231" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "49180" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
