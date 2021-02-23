@@ -87,10 +87,12 @@
 
   &--big {
     max-width: 284px;
+    flex-grow: 2;
   }
 
   &--smaller {
     width: calc(100% / 2 - 3px);
+    flex-grow: 1;
   }
 }
 
