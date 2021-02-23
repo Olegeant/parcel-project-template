@@ -138,6 +138,7 @@
 
 .header-order-btn__tabl {
   cursor: pointer;
+  outline: none;
   opacity: 1;
   animation-name: animateOrderBtn;
   animation-duration: 1000ms;
@@ -293,10 +294,11 @@
       border: none;
       background-color: $color-bg-inverse;
       z-index: 13;
-      transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+      @include transitionMain(background-color, box-shadow);
       &:hover,
       &:focus {
         background-color: $color-bg-btn_hover;
+        box-shadow: 2px 2px 10px 0 $accent-color;
       }
     }
   }
@@ -428,10 +430,11 @@
     font-size: 8px;
     line-height: 1.25;
     background-color: $accent-color;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    @include transitionMain(background-color, box-shadow);
     &:hover,
     &:focus {
       background-color: $color-btn3_hover;
+      box-shadow: 3px 3px 10px 0 #ffffff;
     }
 
     @media screen and (min-width: 1280px) {
@@ -460,10 +463,11 @@
     font-size: 8px;
     line-height: 1.25;
     background-color: $color-bg-inverse;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    @include transitionMain(background-color, box-shadow);
     &:hover,
     &:focus {
       background-color: $color-bg-btn_hover;
+      box-shadow: 2px 2px 10px 0 $accent-color;
     }
     @media screen and (min-width: 1280px) {
       margin-top: 25px;
@@ -547,6 +551,13 @@
     width: 26px;
     height: 26px;
     margin-top: 20px;
+  }
+
+  @include transitionMain(background-color, box-shadow);
+  &:hover,
+  &:focus {
+    background-color: $color-bg-btn_hover;
+    box-shadow: 0px 0px 10px 0 $accent-color;
   }
 }
 
