@@ -117,25 +117,24 @@ parcelRequire = (function (modules, cache, entry, globalName) {
   }
 
   return newRequire;
-})({"js/scroll.js":[function(require,module,exports) {
-// const anchors = document.querySelectorAll('a[href*="#"]');
-// for (let anchor of anchors) {
-//   anchor.addEventListener('click', function (e) {
-//     e.preventDefault();
-//     const blockID = anchor.getAttribute('href').substr(1);
-//     document.getElementById(blockID).scrollIntoView({
-//       behavior: 'smooth',
-//       block: 'start',
-//     });
-//   });
-// }
-var $page = $('html, body');
-$('a[href*="#"]').click(function () {
-  $page.animate({
-    scrollTop: $($.attr(this, 'href')).offset().top
-  }, 400);
-  return false;
-});
+})({"js/product.js":[function(require,module,exports) {
+(function () {
+  var productBtnRef1 = document.querySelector('[data-product-btn1]');
+  var productBtnRef2 = document.querySelector('[data-product-btn2]');
+  var productBtnRef3 = document.querySelector('[data-product-btn3]');
+  var productCardRef1 = document.querySelector('[data-product-card1]');
+  var productCardRef2 = document.querySelector('[data-product-card2]');
+  var productCardRef3 = document.querySelector('[data-product-card3]');
+  productBtnRef1.addEventListener('click', function () {
+    productCardRef1.classList.toggle('is-flipped');
+  });
+  productBtnRef2.addEventListener('click', function () {
+    productCardRef2.classList.toggle('is-flipped');
+  });
+  productBtnRef3.addEventListener('click', function () {
+    productCardRef3.classList.toggle('is-flipped');
+  });
+})();
 },{}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
@@ -340,5 +339,5 @@ function hmrAcceptRun(bundle, id) {
     return true;
   }
 }
-},{}]},{},["../node_modules/parcel-bundler/src/builtins/hmr-runtime.js","js/scroll.js"], null)
-//# sourceMappingURL=/scroll.1c6e0918.js.map
+},{}]},{},["../node_modules/parcel-bundler/src/builtins/hmr-runtime.js","js/product.js"], null)
+//# sourceMappingURL=/product.8a4bddf2.js.map
