@@ -117,16 +117,14 @@ parcelRequire = (function (modules, cache, entry, globalName) {
   }
 
   return newRequire;
-})({"js/modal.js":[function(require,module,exports) {
+})({"js/modal_contact-white.js":[function(require,module,exports) {
 (function () {
   var refs = {
-    openModalBtn: document.querySelector('[data-modal-open]'),
-    openModalMenuBtn: document.querySelector('[data-modal-menu-open]'),
-    closeModalBtn: document.querySelector('[data-modal-close]'),
-    modal: document.querySelector('[data-modal]')
+    openModalBtn: document.querySelector('[data-modal-open-cont-white]'),
+    closeModalBtn: document.querySelector('[data-modal-close-cont-white]'),
+    modal: document.querySelector('[data-modal-contact-white]')
   };
   refs.openModalBtn.addEventListener('click', toggleModal);
-  refs.openModalMenuBtn.addEventListener('click', toggleModal);
   refs.closeModalBtn.addEventListener('click', toggleModal);
 
   function toggleModal() {
@@ -338,5 +336,5 @@ function hmrAcceptRun(bundle, id) {
     return true;
   }
 }
-},{}]},{},["../node_modules/parcel-bundler/src/builtins/hmr-runtime.js","js/modal.js"], null)
-//# sourceMappingURL=/modal.4331011c.js.map
+},{}]},{},["../node_modules/parcel-bundler/src/builtins/hmr-runtime.js","js/modal_contact-white.js"], null)
+//# sourceMappingURL=/modal_contact-white.095efdd7.js.map
