@@ -2599,20 +2599,31 @@ p {
 }
 
 .gallery__list {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: flex-start;
   max-width: 1009px;
   margin: 0 -2px -2px;
 }
-@media screen and (mmin-width: 480px) {
+@media screen and (min-width: 480px) {
   .gallery__list {
-    margin: 0 -2px -2px;
+    margin: 0 -3px -3px;
+  }
+}
+@media screen and (min-width: 480px) {
+  .gallery__list {
+    height: 122px;
   }
 }
 @media screen and (min-width: 768px) {
   .gallery__list {
-    margin: 0 -3px -3px;
+    height: 264px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .gallery__list {
+    height: 430px;
   }
 }
 
@@ -2621,18 +2632,32 @@ p {
   display: flex;
   flex-basis: 13.78%;
   flex-direction: column;
-  height: 100%;
   margin-left: 2px;
   margin-right: 2px;
 }
 @media screen and (min-width: 480px) {
   .gallery__column {
-    margin-left: 2px;
-    margin-right: 2px;
+    margin-left: 3px;
+    margin-right: 3px;
   }
 }
 .gallery__column--wide {
   flex-basis: 28.15%;
+}
+.gallery__column--1 {
+  top: 33%;
+}
+.gallery__column--2 {
+  top: 20%;
+}
+.gallery__column--4 {
+  top: 23%;
+}
+.gallery__column--5 {
+  top: 12%;
+}
+.gallery__column--6 {
+  top: 36%;
 }
 
 .gallery__photo {
@@ -2688,78 +2713,6 @@ p {
 
 .gallery__photo:first-child {
   margin-top: 0;
-}
-
-.gallery__spacer {
-  width: 100%;
-  max-width: 139px;
-  margin-bottom: -3px;
-}
-.gallery__spacer--1 {
-  height: 142px;
-}
-.gallery__spacer--2 {
-  height: 87px;
-}
-.gallery__spacer--4 {
-  height: 100px;
-}
-.gallery__spacer--5 {
-  height: 53px;
-}
-.gallery__spacer--6 {
-  height: 154px;
-}
-@media screen and (max-width: 1279px) {
-  .gallery__spacer--1 {
-    height: 99px;
-  }
-  .gallery__spacer--2 {
-    height: 61px;
-  }
-  .gallery__spacer--4 {
-    height: 70px;
-  }
-  .gallery__spacer--5 {
-    height: 37px;
-  }
-  .gallery__spacer--6 {
-    height: 108px;
-  }
-}
-@media screen and (max-width: 767px) {
-  .gallery__spacer--1 {
-    height: 63px;
-  }
-  .gallery__spacer--2 {
-    height: 38px;
-  }
-  .gallery__spacer--4 {
-    height: 44px;
-  }
-  .gallery__spacer--5 {
-    height: 23px;
-  }
-  .gallery__spacer--6 {
-    height: 68px;
-  }
-}
-@media screen and (max-width: 479px) {
-  .gallery__spacer--1 {
-    height: 13vw;
-  }
-  .gallery__spacer--2 {
-    height: 8vw;
-  }
-  .gallery__spacer--4 {
-    height: 9vw;
-  }
-  .gallery__spacer--5 {
-    height: 5vw;
-  }
-  .gallery__spacer--6 {
-    height: 14vw;
-  }
 }
 
 .button-glitter {
