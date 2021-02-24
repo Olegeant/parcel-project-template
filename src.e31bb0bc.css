@@ -653,7 +653,7 @@ body {
   z-index: 29;
   display: none;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 480px) {
   .menu-container {
     width: 254px;
   }
@@ -2351,9 +2351,6 @@ p {
     width: 180px;
   }
 }
-.contact__btn-white:hover, .contact__btn-white:focus {
-  background: #ecebeb;
-}
 .contact__btn-icon {
   margin-left: 8px;
   fill: currentColor;
@@ -2810,11 +2807,6 @@ p {
 }
 .gallery__photo--big {
   max-width: 284px;
-}
-@media screen and (min-width: 768px) {
-  .gallery__photo--big {
-    width: 174px;
-  }
 }
 @media screen and (min-width: 1280px) {
   .gallery__photo--big {
