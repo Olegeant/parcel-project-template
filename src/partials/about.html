@@ -6,7 +6,34 @@
     </div>
     <div class="about-content">
       <div class="cow">
-        <img src="./images/about/img-desktop-cow@1x.png" alt="" class="photo" />
+        <picture>
+          <source
+            media="(min-width: 1280px)"
+            srcset="
+              ./images/about/img-desktop-cow@1x.png 1x,
+              ./images/about/img-desktop-cow@2x.png 2x
+            "
+          />
+
+          <source
+            media="(min-width: 768px)"
+            srcset="
+              ./images/about/img-tablet-cow@1x.png 1x,
+              ./images/about/img-tablet-cow@2x.png 2x
+            "
+          />
+
+          <img
+            class="photo"
+            srcset="
+              ./images/about/img-mob-cow@1x.png 1x,
+              ./images/about/img-mob-cow@2x.png 2x
+            "
+            src="./images/about/img-mob-cow@1x.png"
+            alt="a pot of milk and a cow standing behind"
+            loading="lazy"
+          />
+        </picture>
       </div>
 
       <div class="text-container">

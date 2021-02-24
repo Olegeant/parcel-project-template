@@ -373,11 +373,6 @@ p {
     }
   }
 
-  &__btn-white:hover,
-  &__btn-white:focus {
-    background: $color-bg-btn_hover;
-  }
-
   &__btn-icon {
     margin-left: 8px;
     fill: currentColor;
