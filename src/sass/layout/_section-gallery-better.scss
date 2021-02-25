@@ -12,7 +12,6 @@
 }
 
 .gallery__list {
-  position: relative;
   display: flex;
   justify-content: center;
   align-items: flex-start;
@@ -41,8 +40,8 @@
 .gallery__column {
   position: relative;
   display: flex;
-  flex-basis: 13.78%;
   flex-direction: column;
+  flex-grow: 1;
   margin-left: 2px;
   margin-right: 2px;
 
@@ -52,7 +51,8 @@
   }
 
   &--wide {
-    flex-basis: 28.15%;
+    flex-grow: 2;
+    top: 0;
   }
 
   &--1 {
@@ -78,9 +78,10 @@
 
 .gallery__photo {
   width: 100%;
-  max-width: 139px;
   margin-top: 2px;
   margin-bottom: 2px;
+  border-radius: 14%;
+  overflow: hidden;
 
   @media screen and (min-width: 480px) {
     margin-top: 3px;
@@ -88,55 +89,40 @@
   }
 
   &--big {
-    max-width: 284px;
-    // width: calc(0.79 * (100vh - 40px));
-
-    // @media screen and (min-width: 480px) {
-    //   width: 174px;
-    // }
-    // @media screen and (min-width: 768px) {
-    //   width: 174px;
-    // }
-    @media screen and (min-width: 1280px) {
-      width: 284px;
-    }
+    border-radius: 7%;
   }
 
   &--smaller {
     width: calc(100% / 2 - 3px);
   }
-}
 
-.gallery__photo--big {
-  max-width: 284px;
+  &.image-animate-clockwise {
+    animation-name: imageMoveClockwise;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    animation-fill-mode: forwards;
+    animation-delay: 0ms;
+  }
+
+  &.image-animate-counter-clockwise {
+    animation-name: imageMoveClockwise;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    animation-fill-mode: forwards;
+    animation-delay: 1000ms;
+  }
+
+  &.delay-5s {
+    animation-delay: 5000ms;
+  }
 }
 
 .gallery__image {
   width: 100%;
-}
-
-.gallery__image--clockwise {
-  animation-name: imageMoveClockwise;
-  animation-duration: 10s;
-  animation-iteration-count: infinite;
-  animation-direction: normal;
-  animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  animation-fill-mode: forwards;
-  animation-delay: 0ms;
-}
-
-.gallery__image--counter-clockwise {
-  animation-name: imageMoveClockwise;
-  animation-duration: 10s;
-  animation-iteration-count: infinite;
-  animation-direction: normal;
-  animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  animation-fill-mode: forwards;
-  animation-delay: 1000ms;
-}
-
-.delay-5s {
-  animation-delay: 5000ms;
 }
 
 .gallery__photo:first-child {
